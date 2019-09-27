@@ -1,4 +1,4 @@
-DGE_load<- function(samp.name, name.barc=F, path=F){
+DGE_load<- function(samp.name, name.barc=F, path=T){
 
   if (path ==F){
   raw.data <- read.table(file = paste0(getwd(),"/data/",samp.name,"_dge.txt"), header = TRUE, row.names = 1)
